@@ -112,6 +112,11 @@ input[type='submit']:hover {
   opacity: 0.8;
 }
 
+a {
+  background: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+
 @media screen and (max-width: 960px) {
   body {
     flex-direction: column;
