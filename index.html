@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p5.js nets</title>
+    <meta name="description" content="Nets - simple p5.js showcase" />
+    <meta name="og:description" content="Nets - simple p5.js showcase" />
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.1/p5.js"
+      type="text/javascript"
+    ></script>
+    <script src="./util.js" type="text/javascript"></script>
+    <script src="./dot.js" type="text/javascript"></script>
+    <script defer src="./sketch.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <aside>
+      <div>
+        <input checked type="checkbox" id="drawDots" name="drawDots" />
+        <label for="drawDots">Draw dots</label>
+      </div>
+      <div>
+        <input
+          type="range"
+          id="distance"
+          name="distance"
+          min="1"
+          max="500"
+          value="50"
+        />
+        <label for="distance">Distance</label>
+      </div>
+      <div>
+        <input
+          type="range"
+          id="count"
+          name="count"
+          min="1"
+          max="350"
+          value="150"
+        />
+        <label for="count">Count</label>
+      </div>
+      <div>
+        <input checked type="checkbox" id="randomSpeed" name="randomSpeed" />
+        <label for="randomSpeed">Random speed</label>
+      </div>
+      <div>
+        <input
+          disabled
+          type="range"
+          id="speed"
+          name="speed"
+          min="1"
+          max="5"
+          value="2"
+        />
+        <label for="speed">Speed</label>
+      </div>
+      <div>
+        <input checked type="checkbox" id="randomR" name="randomR" />
+        <label for="randomR">Random R</label>
+      </div>
+      <div>
+        <input
+          disabled
+          type="range"
+          id="r"
+          name="r"
+          min="1"
+          max="90"
+          value="4"
+        />
+        <label for="r">R</label>
+      </div>
+      <div>
+        <input type="color" id="color" name="color" value="#ffffff" />
+        <label for="color">Color</label>
+      </div>
+      <input type="submit" value="Ok" role="button" />
+    </aside>
+    <div id="canvasWrapper"></div>
+  </body>
+</html>
